@@ -18,9 +18,9 @@
     <div class="main-body">
         <div class="intro">
             <h1 class="top">This is not a real online service! You know ou need something like this
-                in your life to help you realize your deepest dreams. Sign up now and get started.
+                in your life to help you realize your deepest dreams. <br>Sign up <i>now</i> and get started.
             </h1>
-            <h1 class="bottom">You know you want to.</h1>
+            <h1 class="bottom">You <i>know</i> you want to.</h1>
         </div>
         <form action="test.com/path" method="post" class="form" class=".form">
             <div>
@@ -49,19 +49,33 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="user-password">Password</label>
-                        <input type="password" name="user-password" id="user-password">
+                        <input
+                        type="password"
+                        name="user-password"
+                        id="user-password"
+                        class="password"
+                        required
+                        >
                     </div>
                     
                     <div class="form-group">
                         <label for="user-password-confirmation">Confirm Password</label>
-                        <input type="password" name="user-password-confirmation" id="user-password-confirmation">
+                        <input 
+                        type="password"
+                        name="user-password-confirmation"
+                        id="user-password-confirmation"
+                        class="password"
+                        required
+                        >
                     </div>
                 </div>
             </div>
     
         </form>
-        <button type="submit" class="button">Create Account</button>
-        <p class="log-in">Already have an account? Log in</p>
+        <div class="actions">
+            <button type="submit" class="button">Create Account</button>
+            <p class="log-in">Already have an account? <a href="#">Log in</a></p>
+        </div>
     </div>
 
 
